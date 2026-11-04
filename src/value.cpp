@@ -153,7 +153,7 @@ Value Value::exp() const {
     };
     return Value(out);
 }
-
+// Implementation of Tanh
 Value Value::tanh() const {
     auto out = std::make_shared<Node>();
     out->data = std::tanh(node_->data);
